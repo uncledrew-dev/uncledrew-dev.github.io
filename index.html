@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philippine Missile Project 1.0</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #1a202c;
+}
+
+/* HEADER */
+header {
+    background: #0c2340;
+    color: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header button {
+    padding: 8px 18px;
+    background: #0057b8;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 65vh;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1581092334525-0e7e3f80f4f3') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.hero p {
+    margin-top: 20px;
+    max-width: 750px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* CONTENT */
+.section {
+    padding: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h3 {
+    margin-bottom: 20px;
+    color: #0c2340;
+    font-size: 26px;
+}
+
+.section p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* TEAM SECTION */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.team-card h4 {
+    margin-bottom: 8px;
+    color: #0c2340;
+}
+
+.team-card span {
+    font-size: 14px;
+    color: #555;
+}
+
+/* LOGIN */
+.login-container {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #0c2340;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #0057b8;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* DASHBOARD */
+.dashboard {
+    display: none;
+    padding: 60px;
+}
+
+/* FOOTER */
+footer {
+    background: #0c2340;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Philippine Missile Project 1.0</h1>
+    <button onclick="showLogin()">Secure Research Portal</button>
+</header>
+
+<!-- BLOG PAGE -->
+<div id="blogPage">
+
+<div class="hero">
+    <div>
+        <h2>Advancing Strategic Defense Research</h2>
+        <p>
+            The Philippine Missile Project 1.0 is an academic and conceptual initiative
+            focused on understanding missile systems, defense technologies, cybersecurity,
+            artificial intelligence, and embedded systems within a research-based framework.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <h3>Project Overview</h3>
+    <p>
+        This initiative explores theoretical and technological foundations of missile systems,
+        including propulsion concepts, guidance mechanisms, AI-driven targeting systems,
+        cybersecurity safeguards, and database management architectures.
+        The project remains strictly educational and research-oriented.
+    </p>
+</div>
+
+<div class="section">
+    <h3>Core Research Areas</h3>
+    <p>
+        • Artificial Intelligence & Machine Learning Integration<br>
+        • Embedded Systems Programming<br>
+        • Cybersecurity & Defense Infrastructure Protection<br>
+        • Database & Information Management Systems<br>
+        • Legal and Compliance Frameworks
+    </p>
+</div>
+
+<div class="section">
+    <h3>Project Team & Roles</h3>
+    <div class="team-grid">
+
+        <div class="team-card">
+            <h4>John Cedrick</h4>
+            <span>Project Organizer</span>
+        </div>
+
+        <div class="team-card">
+            <h4>Kendrick Verecio</h4>
+            <span>Artificial Intelligence / Machine Learning</span>
+        </div>
+
+        <div class="team-card">
+            <h4>Dale Cinco</h4>
+            <span>Cybersecurity Specialist</span>
+        </div>
+
+        <div class="team-card">
+            <h4>Avrily Quiminales</h4>
+            <span>Embedded Systems & Coding</span>
+        </div>
+
+        <div class="team-card">
+            <h4>Ed Khrysford</h4>
+            <span>Legal Counsel & Compliance</span>
+        </div>
+
+        <div class="team-card">
+            <h4>Sylvan Pavlo Uy</h4>
+            <span>Database Management & Systems Architecture</span>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 Philippine Missile Project 1.0 | Academic & Research Initiative | All Rights Reserved
+</footer>
+
+</div>
+
+<!-- LOGIN PAGE -->
+<div class="login-container" id="loginPage">
+    <div class="login-box">
+        <h2>Authorized Personnel Access</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="error" style="color:red; text-align:center;"></p>
+    </div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="dashboard" id="dashboardPage">
+    <h2>Secure Research Dashboard</h2>
+    <p>
+        Welcome to the internal research portal of the Philippine Missile Project 1.0.
+        Access to restricted materials is limited to authorized team members.
+    </p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+function showLogin() {
+    document.getElementById("blogPage").style.display = "none";
+    document.getElementById("loginPage").style.display = "flex";
+}
+
+function login() {
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user === "admin" && pass === "1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("dashboardPage").style.display = "block";
+    } else {
+        document.getElementById("error").innerText = "Invalid credentials.";
+    }
+}
+
+function logout() {
+    document.getElementById("dashboardPage").style.display = "none";
+    document.getElementById("blogPage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
